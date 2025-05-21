@@ -23,4 +23,5 @@ add_executable(rubiks_cube_solver main.cpp
         PatternDatabases/CornerPatternDatabase.h
         PatternDatabases/CornerPatternDatabase.cpp
         PatternDatabases/CornerDBMaker.h
-        PatternDatabases/CornerDBMaker.cpp)
+        PatternDatabases/CornerDBMaker.cpp
+        Model/PatternDatabase/PatternDatabase.h)

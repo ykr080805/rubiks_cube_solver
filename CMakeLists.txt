@@ -15,4 +15,5 @@ add_executable(rubiks_cube_solver main.cpp
         Solver/IDAstarSolver.h
         PatternDatabases/NibbleArray.h
         PatternDatabases/NibbleArray.cpp
-        PatternDatabases/PatterDatabase.h)
+        PatternDatabases/PatternDatabase.h
+        PatternDatabases/PatternDatabase.cpp)

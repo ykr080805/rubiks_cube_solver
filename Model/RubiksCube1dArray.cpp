@@ -261,3 +261,4 @@ struct Hash1d {
         return hash<string>()(str);
     }
 };
+

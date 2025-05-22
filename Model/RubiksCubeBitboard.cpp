@@ -1,7 +1,6 @@
-//
-// Created by koush on 21-05-2025.
-//
 
+#ifndef RUBIKSCUBEBITBOARD_H  // Unique identifier
+#define RUBIKSCUBEBITBOARD_H
 #include "RubiksCube.h"
 
 class RubiksCubeBitboard : public RubiksCube {
@@ -379,18 +378,6 @@ public:
 
         ret |= get5bitCorner(bottom_back_left);
         ret = ret << 5;
-
-//        Following was used for Testing / Printing
-
-//        cout << top_front_right << " "; print5bitbin(get5bitCorner(top_front_right )); cout  << "\n";
-//        cout << top_front_left << " "; print5bitbin(get5bitCorner(top_front_left )); cout << "\n";
-//        cout << top_back_right << " "; print5bitbin(get5bitCorner(top_back_right )); cout << "\n";
-//        cout << top_back_left  << " "; print5bitbin(get5bitCorner(top_back_left  )); cout << "\n";
-//        cout << bottom_front_right  << " "; print5bitbin(get5bitCorner(bottom_front_right  )); cout << "\n";
-//        cout << bottom_front_left << " "; print5bitbin(get5bitCorner(bottom_front_left )); cout << "\n";
-//        cout << bottom_back_right << " "; print5bitbin(get5bitCorner(bottom_back_right )); cout << "\n";
-//        cout << bottom_back_left << " "; print5bitbin(get5bitCorner(bottom_back_left )); cout << "\n";
-
         return ret;
     }
 
@@ -403,3 +390,5 @@ struct HashBitboard {
         return (size_t) final_hash;
     }
 };
+
+#endif  // RUBIKSCUBEBITBOARD_H
